@@ -12,5 +12,5 @@ urlpatterns = [
     re_path(r'^.*\.html', views.pages, name='pages'),
 
     # The home page
-    path('', views.index, name=''),
+    path('', views.index, name='home'),
 ]
