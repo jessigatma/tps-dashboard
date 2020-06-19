@@ -74,10 +74,23 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'IJALTI_PRUEBA',
+
+        'USER': 'ibm_cloud_d7851057_5048_42bd_947b_bf2d2f6621d1',
+
+        'PASSWORD': '9cf0a2e0e3797c3745f9573b1ecd88da60384cadaec50192e6d66f0051a16447',
+
+        'HOST': '75fadf29-6907-44fd-8c98-56c72bf26948.blijti4d0v0nkr55oei0.databases.appdomain.cloud',
+
+        'PORT': '32579',
+
     }
+
 }
 
 # Password validation
